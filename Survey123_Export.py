@@ -74,7 +74,7 @@ def export_survey_gdb(username, password, surveys):
 
 def download_and_process_gdb(username, password, gdb_names, save_folder):
     # Authenticate with ArcGIS Online
-    gis = GIS("https://organizationname.maps.arcgis.com", username, password)
+    gis = GIS("https://organizationname.maps.arcgis.com", username, password)  # update this address to match your Organization's path
 
     for gdb_name in gdb_names:
         print(f"\nProcessing: {gdb_name}")
